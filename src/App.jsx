@@ -1,14 +1,14 @@
-import Home from './components/Home'
-import About from './components/About'
-import Anime from './components/Anime'
-import Contact from './components/Contact'
-import Manga from './components/Manga'
-import Privacy from './components/Privacy'
-import Reco from './components/Reco'
-import Terms from './components/Terms'
+import Home from './components/essentials/Home'
+import About from './components/pages/About'
+import Anime from './components/pages/Anime'
+import Contact from './components/pages/Contact'
+import Manga from './components/pages/Manga'
+import Privacy from './components/pages/Privacy'
+import Terms from './components/pages/Terms'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/essentials/Header'
 import Banner from './components/essentials/Banner'
+import Novel from './components/pages/Novel'
 // import '../src/App.css'
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/manga' element={<Manga/>}/>
           <Route path='/privacy' element={<Privacy/>}/>
-          <Route path='/recommendations' element={<Reco/>}/>
+          <Route path='/lightnovel' element={<Novel/>}/>
           <Route path='/terms&conditions' element={<Terms/>}/>
           </Routes>
         </BrowserRouter>

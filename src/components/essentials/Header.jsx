@@ -20,16 +20,23 @@ function Header() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" id='auto'>
-            <Nav.Link href="/anime">Anime</Nav.Link>
-            <Nav.Link href="/manga">Manga</Nav.Link>
-            <Nav.Link href="/recommendations">Recommendations</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <NavDropdown title="More" id="collasible-nav-dropdown" menuVariant='dark'>
-              <NavDropdown.Item href="/contact">Contact Us</NavDropdown.Item>
-              <NavDropdown.Item href="/privacy">
-                Privacy Policy
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/terms&conditions">Terms&Conditions</NavDropdown.Item>
+            <Nav.Link href="/">Home</Nav.Link>
+            <NavDropdown title="Anime" className='menu' id="collasible-nav-dropdown"  menuVariant='dark' bg='black'>
+              <NavDropdown.Item id='item' href="/">Anime Blog</NavDropdown.Item>
+              <NavDropdown.Item id='item' href="/">Anime Review</NavDropdown.Item>
+              <NavDropdown.Item id='item' href="/">Anime Recommendations</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Manga" className='menu' id="collasible-nav-dropdown"  menuVariant='dark' bg='black'>
+              <NavDropdown.Item id='item' href="/">Manga Blog</NavDropdown.Item>
+              <NavDropdown.Item id='item' href="/">Manga Review</NavDropdown.Item>
+              <NavDropdown.Item id='item' href="/">Manga Recommendations</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link id='cat' href="/lightnovel">Light Novel</Nav.Link>
+            <Nav.Link id='cat' href="/contact">Contact Us</Nav.Link>
+            <NavDropdown title="More" className='menu' id="collasible-nav-dropdown"  menuVariant='dark' bg='black'>
+              <NavDropdown.Item id='items' href="/about">About</NavDropdown.Item>
+              <NavDropdown.Item id='items' href="/privacy">Privacy Policy</NavDropdown.Item>
+              <NavDropdown.Item id='items' href="/terms&conditions">Terms&Conditions</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
