@@ -8,6 +8,7 @@ import Reco from './components/Reco'
 import Terms from './components/Terms'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/essentials/Header'
+import Banner from './components/essentials/Banner'
 // import '../src/App.css'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   
   
     <div className="App">
-          
+          <Banner/>
         <BrowserRouter>
         <Header/>
           <Routes>
