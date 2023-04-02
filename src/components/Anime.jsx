@@ -1,9 +1,8 @@
 import React from 'react'
-import Animeposts from '../posts/Animeposts'
 
 const Anime = () => {
   return (
-anime
+<div>anime</div>
   )
 }
 
