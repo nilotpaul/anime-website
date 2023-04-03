@@ -5,7 +5,7 @@ import '../styles/Banner.css'
 const Banner = () => {
   return (
 
-    <img src='banner.png' alt='banner'/>
+    <img src='banner.png' class="img-fluid" alt='banner'/>
   )
 }
 

@@ -1,6 +1,4 @@
-@media only screen and (max-width: 600px){
-img{
-    height: 70px;
-    width: 500px;
-}
+.img-fluid{
+    width: auto;    
+    height: auto;
 }

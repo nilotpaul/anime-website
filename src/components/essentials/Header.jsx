@@ -14,8 +14,8 @@ function Header() {
             <img
               alt="website-logo"
               src="/OtakuNomad.png"
-              // width="138"
-              // height="29"
+              width="138"
+              height="29"
               className="logoimg"
             />
       </Navbar.Brand>
