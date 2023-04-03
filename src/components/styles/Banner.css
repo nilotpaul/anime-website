@@ -1,4 +1,6 @@
+@media only screen and (max-width: 600px){
 img{
-    height: 120px;
-    width: 1600px;
+    height: 70px;
+    width: 500px;
+}
 }

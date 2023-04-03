@@ -13,11 +13,15 @@ a:any-link{
 #cat{
     padding-left: 80px;
 }
+#caty{
+    padding-left: 80px;
+    padding-right: 40px;
+}
 #logo{
     padding-left: 28.5px;
 }
 
-/* @media (min-width: 993px) {
+@media (min-width: 993px) {
     .dropdown .dropdown-menu.show{
         display: none !important;
     }
@@ -27,14 +31,21 @@ a:any-link{
     .dropdown:focus .dropdown-menu{
         display: block !important;
     }
-} */
-@media(min-width:900px){
+}
+/* @media(min-width:900px){
 #collasible-nav-dropdown:hover .drop{
     display: block;
 }
-}
+} */
 @media(max-width: 600px){
     #mcat{
         padding-left: 80px;
     }
+}
+.dropdown{
+    padding-left: 40px;
+}
+.logoimg{
+    height: 29px;
+    width: 138px;
 }
