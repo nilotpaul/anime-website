@@ -16,35 +16,25 @@ a:any-link{
 #logo{
     padding-left: 28.5px;
 }
-.nav-item:hover .dropdown-menu{ 
-    display: block; 
-}
 
-
-
-/* .dropbtn {
-    background-color: #212429;
-    color: whitesmoke;
-    border: none;
-    padding-top: 7.5px;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #353a40;
-  }
-
-  .dropdown-content a {
-    color: whitesmoke;
-    padding: 12px 16px;
-    text-decoration: none;
+/* @media (min-width: 993px) {
+    .dropdown .dropdown-menu.show{
+        display: none !important;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block !important;
+    }
+    .dropdown:focus .dropdown-menu{
+        display: block !important;
+    }
+} */
+@media(min-width:900px){
+#collasible-nav-dropdown:hover .drop{
     display: block;
-    
-  }
-  .dropdown:hover .dropdown-content {display: block;}
-  .dropdown:hover .dropbtn {color: grey};
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
- */
+}
+}
+@media(max-width: 600px){
+    #mcat{
+        padding-left: 80px;
+    }
+}

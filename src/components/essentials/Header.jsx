@@ -3,6 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../styles/header.css'
+import '@coreui/coreui/dist/css/coreui.min.css'
+import { CDropdown, CDropdownItem, CDropdownMenu, CDropdownToggle, CNavLink } from '@coreui/react';
+
 
 function Header() {
   return (
@@ -20,24 +23,47 @@ function Header() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" id='auto'>
-            <Nav.Link href="/">Home</Nav.Link>
-            <NavDropdown title="Anime" className='menu' id="collasible-nav-dropdown"  menuVariant='dark' bg='black'>
-              <NavDropdown.Item id='item' href="/">Anime Blog</NavDropdown.Item>
-              <NavDropdown.Item id='item' href="/">Anime Review</NavDropdown.Item>
-              <NavDropdown.Item id='item' href="/">Anime Recommendations</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Manga" className='menu' id="collasible-nav-dropdown"  menuVariant='dark' bg='black'>
-              <NavDropdown.Item id='item' href="/">Manga Blog</NavDropdown.Item>
-              <NavDropdown.Item id='item' href="/">Manga Review</NavDropdown.Item>
-              <NavDropdown.Item id='item' href="/">Manga Recommendations</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link id='cat' href="/lightnovel">Light Novel</Nav.Link>
-            <Nav.Link id='cat' href="/contact">Contact Us</Nav.Link>
-            <NavDropdown title="More" className='menu' id="collasible-nav-dropdown"  menuVariant='dark' bg='black'>
-              <NavDropdown.Item id='items' href="/about">About</NavDropdown.Item>
-              <NavDropdown.Item id='items' href="/privacy">Privacy Policy</NavDropdown.Item>
-              <NavDropdown.Item id='items' href="/terms&conditions">Terms&Conditions</NavDropdown.Item>
-            </NavDropdown>
+          <CNavLink id='mcat' href="/" active>
+                Home
+              </CNavLink>
+          
+  <CDropdown variant='nav-item' dark component="li" id='collasible-nav-dropdown' popper={false}>
+  <CDropdownToggle id='collasible-nav-dropdown'>Anime</CDropdownToggle>
+  <CDropdownMenu className='drop'>
+                <CDropdownItem href="#" id='items' >Anime Blog</CDropdownItem>
+                <CDropdownItem href="#" id='items'>Anime Review</CDropdownItem>
+                <CDropdownItem href="#" id='items'>Anime Recommendations</CDropdownItem>   
+              </CDropdownMenu>
+
+  </CDropdown>
+              <CDropdown variant='nav-item' dark component="li" id='collasible-nav-dropdown' popper={false}>
+  <CDropdownToggle id='collasible-nav-dropdown'>Manga</CDropdownToggle>
+  <CDropdownMenu className='drop'>
+                <CDropdownItem href="#" id='items' >Manga Blog</CDropdownItem>
+                <CDropdownItem href="#" id='items'>Manga Review</CDropdownItem>
+                <CDropdownItem href="#" id='items'>Manga Recommendations</CDropdownItem>
+              </CDropdownMenu>
+
+  </CDropdown>
+  <CNavLink href="/lightnovel" id='cat' active>
+                Light Novel
+              </CNavLink>
+              <CNavLink id='cat' href="/contact" active>
+                Contact Us
+              </CNavLink>            
+
+            <CDropdown variant='nav-item' dark component="li" id='collasible-nav-dropdown' popper={false}>
+  <CDropdownToggle id='collasible-nav-dropdown'>More</CDropdownToggle>
+  <CDropdownMenu className='drop'>
+                <CDropdownItem href="/about" id='items' >About</CDropdownItem>
+                <CDropdownItem href="privacy" id='items'>Privacy Policy</CDropdownItem>
+                <CDropdownItem href="terms&conditions" id='items'>Terms&Conditions</CDropdownItem>
+
+    
+              </CDropdownMenu>
+
+  </CDropdown>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
