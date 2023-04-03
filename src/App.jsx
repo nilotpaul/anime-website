@@ -15,6 +15,7 @@ import Animereco from './components/pages/Animereco'
 import Mangablog from './components/pages/Mangablog'
 import Mangarev from './components/pages/Mangarev'
 import Mangarec from './components/pages/Mangarec'
+import Cmpersecond from './posts/Anime/Cmpersec'
 // import '../src/App.css'
 
 function App() {
@@ -41,6 +42,8 @@ function App() {
           <Route path='/terms&conditions' element={<Terms/>}/>
           <Route path='/anime' element={<Anime/>}/>
           <Route path='/manga' element={<Manga/>}/>
+
+          <Route path='/title' element={<Cmpersecond/>}/>
           </Routes>
         </BrowserRouter>
     </div>
