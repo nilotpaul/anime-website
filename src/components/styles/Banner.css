@@ -1,4 +1,12 @@
+@media(min-width:900px){
 .img-fluid{
     width: auto;    
-    height: 55px;
+    height: auto;
+}
+}
+@media(max-width: 600px){
+    .img-fluid{
+        width: auto;
+        height: 52px;
+    }
 }
