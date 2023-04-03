@@ -1,12 +1,13 @@
-@media(max-width: 900px){
-.thumb{
-    width: auto;    
+.parent .thumb{
+    padding-top: 30px;
+    width: 100%;    
     height: auto;
 }
-}
-@media(max-width: 600px){
+
+/* @media(min-width: 600px){
     .thumb{
-        width: auto;
+
+        width: 100%;
         height: auto;
     }
-}
+} */
