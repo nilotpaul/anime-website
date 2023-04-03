@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../styles/header.css'
 import { CDropdown, CDropdownItem, CDropdownMenu, CDropdownToggle, CNavLink } from '@coreui/react';
 import '@coreui/coreui/dist/css/coreui.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Header() {
   return (
